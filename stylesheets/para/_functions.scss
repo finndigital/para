@@ -1,0 +1,4 @@
+@function column-width($numerator, $denominator){
+  $width: ( $numerator / $denominator ) * 100%;
+  @return $width;
+}

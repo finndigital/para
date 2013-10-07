@@ -1,0 +1,74 @@
+@mixin silent-relative{
+  position: relative;
+}
+
+@mixin setup-push($namespace: ''){
+
+  .#{$namespace}push-one-whole { left: 100%; @include silent-relative }
+
+  .#{$namespace}push-one-half { left: 50%; @include silent-relative }
+
+  .#{$namespace}push-one-third { left: 33.3333%; @include silent-relative }
+  .#{$namespace}push-two-thirds { left: 66.6666%; @include silent-relative }
+
+  .#{$namespace}push-one-quarter { left: 25%; @include silent-relative; } 
+  .#{$namespace}push-two-quarters { @extend .#{$namespace}push-one-half; }
+  .#{$namespace}push-three-quarters { left: 75%; @include silent-relative; }
+
+  .#{$namespace}push-one-fifth { left: 20%; @include silent-relative }
+  .#{$namespace}push-two-fifths { left: 40%; @include silent-relative }
+  .#{$namespace}push-three-fifths { left: 60%; @include silent-relative }
+  .#{$namespace}push-four-fifths { left: 80%; @include silent-relative }
+
+  .#{$namespace}push-one-sixth { left: 16.666%; @include silent-relative }
+  .#{$namespace}push-two-sixths { @extend .#{$namespace}push-one-third; }
+  .#{$namespace}push-three-sixths { @extend .#{$namespace}push-one-half; }
+  .#{$namespace}push-four-sixths { @extend .#{$namespace}push-two-thirds; }
+  .#{$namespace}push-five-sixths { left: 83.3333%; @include silent-relative }
+
+  .#{$namespace}push-one-eighth { width: column-width(1,8); }
+  .#{$namespace}push-two-eighths { @extend .#{$namespace}push-one-quarter; }
+  .#{$namespace}push-three-eighths { width: column-width(3,8); }
+  .#{$namespace}push-four-eighths { @extend .#{$namespace}push-one-half; }
+  .#{$namespace}push-five-eighths { width: column-width(5,8); }
+  .#{$namespace}push-six-eighths { @extend .#{$namespace}push-three-quarters; }
+  .#{$namespace}push-seven-eights { width: column-width(7,8); }
+}
+
+@mixin setup-pull($namespace: ''){
+
+  .#{$namespace}pull-one-whole { left: 100%; @include silent-relative; }
+
+  .#{$namespace}pull-one-half { left: -50%; @include silent-relative }
+
+  .#{$namespace}pull-one-third { left: -33.3333%; @include silent-relative }
+  .#{$namespace}pull-two-thirds { left: -66.6666%; @include silent-relative }
+
+  .#{$namespace}pull-one-quarter { left: -25%; @include silent-relative; } 
+  .#{$namespace}pull-two-quarters { @extend .#{$namespace}pull-one-half; }
+  .#{$namespace}pull-three-quarters { left: -75%; @include silent-relative; }
+
+  .#{$namespace}pull-one-fifth { left: -20%; @include silent-relative }
+  .#{$namespace}pull-two-fifths { left: -40%; @include silent-relative }
+  .#{$namespace}pull-three-fifths { left: -60%; @include silent-relative }
+  .#{$namespace}pull-four-fifths { left: -80%; @include silent-relative }
+
+  .#{$namespace}pull-one-sixth { left: column-width(-1,5); @include silent-relative }
+  .#{$namespace}pull-two-sixths { @extend .#{$namespace}pull-one-third; }
+  .#{$namespace}pull-three-sixths { @extend .#{$namespace}pull-one-half; }
+  .#{$namespace}pull-four-sixths { @extend .#{$namespace}pull-two-thirds; }
+  .#{$namespace}pull-five-sixths { left: column-width(-5,6); @include silent-relative }
+
+  .#{$namespace}pull-one-eighth { width: column-width(-1,8); }
+  .#{$namespace}pull-two-eighths { @extend .#{$namespace}pull-one-quarter; }
+  .#{$namespace}pull-three-eighths { width: column-width(-3,8); }
+  .#{$namespace}pull-four-eighths { @extend .#{$namespace}pull-one-half; }
+  .#{$namespace}pull-five-eighths { width: column-width(-5,8); }
+  .#{$namespace}pull-six-eighths { @extend .#{$namespace}pull-three-quarters; }
+  .#{$namespace}pull-seven-eights { width: column-width(-7,8); }
+}
+
+@mixin setup-push-pull($namespace: ''){
+  @include setup-push($namespace);
+  @include setup-pull($namespace);
+}

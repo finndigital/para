@@ -1,0 +1,10 @@
+// media queries
+$palm: '(max-width:500px)'!default;
+$tablet: '(min-width: 501px) and (max-width:1023px)'!default;
+$portable: '(max-width:1023px)'!default;
+$desk: '(min-width: 1024px)'!default;
+$wide: '(min-width: 1200px)'!default;
+$huge: '(min-width: 1600px)'!default;
+
+$base-gutter-width: (30px/16px) * 1em!default;
+$base-grid-padding: $base-gutter-width!default;

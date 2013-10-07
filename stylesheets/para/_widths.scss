@@ -1,0 +1,34 @@
+@mixin setup-grid($namespace: ''){
+
+  .#{$namespace}one-whole { width: 100%; }
+
+  .#{$namespace}one-half { width: 50%; }
+
+  .#{$namespace}one-third { width: column-width(1, 3); }
+  .#{$namespace}two-thirds { width: column-width(2, 3); }
+
+  .#{$namespace}one-quarter { width: 25% } 
+  .#{$namespace}two-quarters { @extend .#{$namespace}one-half; }
+  .#{$namespace}three-quarters { width: 75% }
+
+  .#{$namespace}one-fifth { width: 20%; }
+  .#{$namespace}two-fifths { width: 40%; }
+  .#{$namespace}three-fifths { width: 60%; }
+  .#{$namespace}four-fifths { width: 80%; }
+
+  // Six column grid
+  .#{$namespace}one-sixth { width: column-width(1, 6); }
+  .#{$namespace}two-sixths { @extend .#{$namespace}one-third; }
+  .#{$namespace}three-sixths { @extend .#{$namespace}one-half; }
+  .#{$namespace}four-sixths { @extend .#{$namespace}two-thirds; }
+  .#{$namespace}five-sixths { width: column-width(5, 6); }
+
+  //Eight column grid
+  .#{$namespace}one-eighth { width: column-width(1,8); }
+  .#{$namespace}two-eighths { @extend .#{$namespace}one-quarter; }
+  .#{$namespace}three-eighths { width: column-width(3,8); }
+  .#{$namespace}four-eighths { @extend .#{$namespace}one-half; }
+  .#{$namespace}five-eighths { width: column-width(5,8); }
+  .#{$namespace}six-eighths { @extend .#{$namespace}three-quarters; }
+  .#{$namespace}seven-eights { width: column-width(7,8); }
+}

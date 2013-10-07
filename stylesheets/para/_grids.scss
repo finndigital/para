@@ -1,0 +1,12 @@
+@mixin initialise-grid{
+  .grid{
+    margin: 0 $base-grid-padding;
+  }
+
+  .grid__item{
+    @include box-sizing(border-box);
+    @include float(left);
+    padding-left: $base-gutter-width / 2;
+    padding-right: $base-gutter-width / 2;
+  }
+}
