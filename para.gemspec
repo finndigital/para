@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'para/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "para"
+  spec.name          = "para-grids"
   spec.version       = Para::VERSION
   spec.authors       = ["Ian Thomas"]
   spec.email         = ["ian@ian-thomas.net"]
