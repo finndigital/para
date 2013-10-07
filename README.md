@@ -10,7 +10,7 @@ Para adds basic grids to your project as a compass extension.
 
 Add this line to your application's Gemfile:
 
-    gem 'para'
+    gem 'para-grids'
 
 And then execute:
 
