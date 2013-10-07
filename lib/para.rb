@@ -1,5 +1,7 @@
 require "para/version"
+require "compass"
 
 module Para
-  # Your code goes here...
+  extension_path = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+  Compass::Frameworks.register('para', path: extension_path)
 end
