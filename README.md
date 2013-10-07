@@ -1,6 +1,6 @@
 # Para
 
-Para is a simple grid system developed for use internally at [finn](http://www.finncomms.com) and borrows heavily from the thinking of our good friend [@csswizardry](http://www.twitter.com/csswizardy) creator of [inuit css](www.github.com/csswizardy/inuit) and [csswizardry-grids](http://www.github.com/csswizardry/grids).
+Para is a simple grid system developed for use internally at [finn](http://www.finncomms.com) and borrows heavily from the thinking of our good friend [@csswizardry](http://www.twitter.com/csswizardy) creator of [inuit css](www.github.com/csswizardy/inuit.css) and [csswizardry-grids](http://www.github.com/csswizardry/csswizardry-grids).
 
 Para adds basic grids to your project as a compass extension.
 
