@@ -1,0 +1,1984 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * We want to be able to space the grid, but not use padding
+ */
+/* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_grids.scss */
+.grid {
+  margin: 0 1.875em;
+}
+
+/*
+ * While there is a movement towards inline-block for grid elements, we favour
+ * display:block and floats
+ */
+/* line 13, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_grids.scss */
+.grid__item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+
+/* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-whole {
+  width: 100%;
+}
+
+/* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-half, .two-quarters, .three-sixths, .four-eighths {
+  width: 50%;
+}
+
+/* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-third, .two-sixths {
+  width: 33.33333%;
+}
+
+/* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.two-thirds, .four-sixths {
+  width: 66.66667%;
+}
+
+/* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-quarter, .two-eighths {
+  width: 25%;
+}
+
+/* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.three-quarters, .six-eighths {
+  width: 75%;
+}
+
+/* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-fifth {
+  width: 20%;
+}
+
+/* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.two-fifths {
+  width: 40%;
+}
+
+/* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.three-fifths {
+  width: 60%;
+}
+
+/* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.four-fifths {
+  width: 80%;
+}
+
+/* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-sixth {
+  width: 16.66667%;
+}
+
+/* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.five-sixths {
+  width: 83.33333%;
+}
+
+/* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.one-eighth {
+  width: 12.5%;
+}
+
+/* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.three-eighths {
+  width: 37.5%;
+}
+
+/* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.five-eighths {
+  width: 62.5%;
+}
+
+/* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+.seven-eights {
+  width: 87.5%;
+}
+
+/* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-whole {
+  left: 100%;
+  position: relative;
+}
+
+/* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-half, .push-two-quarters, .push-three-sixths, .push-four-eighths {
+  left: 50%;
+  position: relative;
+}
+
+/* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-third, .push-two-sixths {
+  left: 33.3333%;
+  position: relative;
+}
+
+/* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-two-thirds, .push-four-sixths {
+  left: 66.6666%;
+  position: relative;
+}
+
+/* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-quarter, .push-two-eighths {
+  left: 25%;
+  position: relative;
+}
+
+/* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-three-quarters, .push-six-eighths {
+  left: 75%;
+  position: relative;
+}
+
+/* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-fifth {
+  left: 20%;
+  position: relative;
+}
+
+/* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-two-fifths {
+  left: 40%;
+  position: relative;
+}
+
+/* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-three-fifths {
+  left: 60%;
+  position: relative;
+}
+
+/* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-four-fifths {
+  left: 80%;
+  position: relative;
+}
+
+/* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-sixth {
+  left: 16.666%;
+  position: relative;
+}
+
+/* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-five-sixths {
+  left: 83.3333%;
+  position: relative;
+}
+
+/* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-one-eighth {
+  width: 12.5%;
+}
+
+/* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-three-eighths {
+  width: 37.5%;
+}
+
+/* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-five-eighths {
+  width: 62.5%;
+}
+
+/* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.push-seven-eights {
+  width: 87.5%;
+}
+
+/* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-whole {
+  left: 100%;
+  position: relative;
+}
+
+/* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-half, .pull-two-quarters, .pull-three-sixths, .pull-four-eighths {
+  left: -50%;
+  position: relative;
+}
+
+/* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-third, .pull-two-sixths {
+  left: -33.3333%;
+  position: relative;
+}
+
+/* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-two-thirds, .pull-four-sixths {
+  left: -66.6666%;
+  position: relative;
+}
+
+/* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-quarter, .pull-two-eighths {
+  left: -25%;
+  position: relative;
+}
+
+/* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-three-quarters, .pull-six-eighths {
+  left: -75%;
+  position: relative;
+}
+
+/* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-fifth {
+  left: -20%;
+  position: relative;
+}
+
+/* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-two-fifths {
+  left: -40%;
+  position: relative;
+}
+
+/* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-three-fifths {
+  left: -60%;
+  position: relative;
+}
+
+/* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-four-fifths {
+  left: -80%;
+  position: relative;
+}
+
+/* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-sixth {
+  left: -20%;
+  position: relative;
+}
+
+/* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-five-sixths {
+  left: -83.33333%;
+  position: relative;
+}
+
+/* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-one-eighth {
+  width: -12.5%;
+}
+
+/* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-three-eighths {
+  width: -37.5%;
+}
+
+/* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-five-eighths {
+  width: -62.5%;
+}
+
+/* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+.pull-seven-eights {
+  width: -87.5%;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-third, .palm-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-two-thirds, .palm-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-quarter, .palm-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-three-quarters, .palm-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .palm-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-half, .palm-push-two-quarters, .palm-push-three-sixths, .palm-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-third, .palm-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-two-thirds, .palm-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-quarter, .palm-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-three-quarters, .palm-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-half, .palm-pull-two-quarters, .palm-pull-three-sixths, .palm-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-third, .palm-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-two-thirds, .palm-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-quarter, .palm-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-three-quarters, .palm-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .palm-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-half, .tablet-two-quarters, .tablet-three-sixths, .tablet-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-third, .tablet-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-two-thirds, .tablet-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-quarter, .tablet-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-three-quarters, .tablet-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .tablet-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-half, .tablet-push-two-quarters, .tablet-push-three-sixths, .tablet-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-third, .tablet-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-two-thirds, .tablet-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-quarter, .tablet-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-three-quarters, .tablet-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-half, .tablet-pull-two-quarters, .tablet-pull-three-sixths, .tablet-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-third, .tablet-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-two-thirds, .tablet-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-quarter, .tablet-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-three-quarters, .tablet-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .tablet-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-third, .portable-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-two-thirds, .portable-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-quarter, .portable-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-three-quarters, .portable-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .portable-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-half, .portable-push-two-quarters, .portable-push-three-sixths, .portable-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-third, .portable-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-two-thirds, .portable-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-quarter, .portable-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-three-quarters, .portable-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-half, .portable-pull-two-quarters, .portable-pull-three-sixths, .portable-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-third, .portable-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-two-thirds, .portable-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-quarter, .portable-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-three-quarters, .portable-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .portable-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-third, .desk-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-two-thirds, .desk-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-quarter, .desk-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-three-quarters, .desk-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .desk-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-half, .desk-push-two-quarters, .desk-push-three-sixths, .desk-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-third, .desk-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-two-thirds, .desk-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-quarter, .desk-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-three-quarters, .desk-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-half, .desk-pull-two-quarters, .desk-pull-three-sixths, .desk-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-third, .desk-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-two-thirds, .desk-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-quarter, .desk-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-three-quarters, .desk-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .desk-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-half, .wide-two-quarters, .wide-three-sixths, .wide-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-third, .wide-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-two-thirds, .wide-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-quarter, .wide-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-three-quarters, .wide-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .wide-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-half, .wide-push-two-quarters, .wide-push-three-sixths, .wide-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-third, .wide-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-two-thirds, .wide-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-quarter, .wide-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-three-quarters, .wide-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-half, .wide-pull-two-quarters, .wide-pull-three-sixths, .wide-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-third, .wide-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-two-thirds, .wide-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-quarter, .wide-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-three-quarters, .wide-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .wide-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 3, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-whole {
+    width: 100%;
+  }
+
+  /* line 5, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-half, .huge-two-quarters, .huge-three-sixths, .huge-four-eighths {
+    width: 50%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-third, .huge-two-sixths {
+    width: 33.33333%;
+  }
+
+  /* line 8, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-two-thirds, .huge-four-sixths {
+    width: 66.66667%;
+  }
+
+  /* line 10, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-quarter, .huge-two-eighths {
+    width: 25%;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-three-quarters, .huge-six-eighths {
+    width: 75%;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-fifth {
+    width: 20%;
+  }
+
+  /* line 15, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-two-fifths {
+    width: 40%;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-three-fifths {
+    width: 60%;
+  }
+
+  /* line 17, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-four-fifths {
+    width: 80%;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-sixth {
+    width: 16.66667%;
+  }
+
+  /* line 24, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-five-sixths {
+    width: 83.33333%;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_widths.scss */
+  .huge-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 7, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 9, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-half, .huge-push-two-quarters, .huge-push-three-sixths, .huge-push-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+
+  /* line 11, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-third, .huge-push-two-sixths {
+    left: 33.3333%;
+    position: relative;
+  }
+
+  /* line 12, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-two-thirds, .huge-push-four-sixths {
+    left: 66.6666%;
+    position: relative;
+  }
+
+  /* line 14, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-quarter, .huge-push-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+
+  /* line 16, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-three-quarters, .huge-push-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+
+  /* line 18, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+
+  /* line 19, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+
+  /* line 20, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+
+  /* line 21, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+
+  /* line 23, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-sixth {
+    left: 16.666%;
+    position: relative;
+  }
+
+  /* line 27, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-five-sixths {
+    left: 83.3333%;
+    position: relative;
+  }
+
+  /* line 29, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 31, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 33, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 35, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-push-seven-eights {
+    width: 87.5%;
+  }
+
+  /* line 40, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-whole {
+    left: 100%;
+    position: relative;
+  }
+
+  /* line 42, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-half, .huge-pull-two-quarters, .huge-pull-three-sixths, .huge-pull-four-eighths {
+    left: -50%;
+    position: relative;
+  }
+
+  /* line 44, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-third, .huge-pull-two-sixths {
+    left: -33.3333%;
+    position: relative;
+  }
+
+  /* line 45, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-two-thirds, .huge-pull-four-sixths {
+    left: -66.6666%;
+    position: relative;
+  }
+
+  /* line 47, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-quarter, .huge-pull-two-eighths {
+    left: -25%;
+    position: relative;
+  }
+
+  /* line 49, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-three-quarters, .huge-pull-six-eighths {
+    left: -75%;
+    position: relative;
+  }
+
+  /* line 51, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-fifth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 52, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-two-fifths {
+    left: -40%;
+    position: relative;
+  }
+
+  /* line 53, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-three-fifths {
+    left: -60%;
+    position: relative;
+  }
+
+  /* line 54, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-four-fifths {
+    left: -80%;
+    position: relative;
+  }
+
+  /* line 56, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-sixth {
+    left: -20%;
+    position: relative;
+  }
+
+  /* line 60, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-five-sixths {
+    left: -83.33333%;
+    position: relative;
+  }
+
+  /* line 62, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-one-eighth {
+    width: -12.5%;
+  }
+
+  /* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-three-eighths {
+    width: -37.5%;
+  }
+
+  /* line 66, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-five-eighths {
+    width: -62.5%;
+  }
+
+  /* line 68, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/para-0.0.1/stylesheets/para/_push-pull.scss */
+  .huge-pull-seven-eights {
+    width: -87.5%;
+  }
+}
+/* line 61, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../Users/Ian/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 27, ../_sass/screen.scss */
+html {
+  padding-top: 1.5em;
+  background-color: #343333;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 33, ../_sass/screen.scss */
+.grid__item {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  text-align: center;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #f3f3f3;
+}
+
+/* line 43, ../_sass/screen.scss */
+.grid {
+  margin-bottom: 1.5em;
+}

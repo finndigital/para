@@ -3,4 +3,44 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
+@import "para";
+
+@include initialise-grid();
+
+$breakpoints: palm, tablet, portable, desk, wide, huge;
+$vars: $palm, $tablet, $portable, $desk, $wide, $huge;
+
+@include setup-grid();
+@include setup-push-pull();
+
+@for $i from 1 through length($breakpoints){
+  @include media-query(#{nth($vars, $i)}){
+    @include setup-grid("#{nth($breakpoints, $i)}-");
+    @include setup-push-pull("#{nth($breakpoints, $i)}-");
+  }
+}
+
+@include establish-baseline;
+
+html{
+  @include padding-leader(1);
+  @include contrasted(#343333);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.grid__item{
+  @include padding-leader(1);
+  @include padding-trailer(1);
+  @include border-radius(6px);
+  text-align: center;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #f3f3f3;
+}
+
+.grid{
+  @include trailer(1);
+}
+
