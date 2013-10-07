@@ -86,8 +86,8 @@ To use a namespaced grid such as those created in the second responsive example 
 
 ```html
 <div class="grid">
-  <div class="grid__item one-whole portable-one-third">One whole on all devices that don't match the "portable" media query and one third on those that do.</div>
-  <div class="grid__item one-whole portable-two-thirds">One whole on all devices that don't match the "portable" media query and two thirds on those that do.</div>
+  <div class="grid__item one-whole portable-one-third">...</div>
+  <div class="grid__item one-whole portable-two-thirds">...</div>
 </div>
 ```
 
@@ -105,7 +105,7 @@ Using these classes follows the same BEM format as the grid widths:
 
 ```html
 <div class="grid">
-  <grid__item class="one-third push-two-thirds">...</grid__item>
+  <div class="grid__item one-third push-two-thirds">...</div>
   <div class="grid__item two-thirds pull_one-third">...</div>
 </div>
 ```
