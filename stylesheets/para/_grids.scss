@@ -1,8 +1,15 @@
 @mixin initialise-grid{
+  /*
+   * We want to be able to space the grid, but not use padding
+   */
   .grid{
     margin: 0 $base-grid-padding;
   }
 
+  /*
+   * While there is a movement towards inline-block for grid elements, we favour
+   * display:block and floats
+   */
   .grid__item{
     @include box-sizing(border-box);
     @include float(left);
