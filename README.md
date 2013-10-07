@@ -65,6 +65,8 @@ $vars: $palm, $tablet, $portable, $desk, $wide, $huge;
 }
 ```
 
+We define the breakpoints above for you as defaults, but you can set them to be whatever you like. 
+
 ### In your html
 
 To use the grids that para spits out, simply scaffold as follows:
@@ -91,6 +93,23 @@ To use a namespaced grid such as those created in the second responsive example 
 
 ### Pushing and Pulling
 
+Para also includes the ability to create push- and pull- classes for your namespaced grid widths. It's as simple as adding:
+
+```sass
+@include setup-push-pull();
+```
+
+You can include a namespace inside the mixin to achieve classes that match your namespaced grid widths (e.g. `@include setup-push-pull('palm-');`).
+
+Using these classes follows the same BEM format as the grid widths:
+
+```html
+<div class="grid">
+  <grid__item class="one-third push-two-thirds">...</grid__item>
+  <div class="grid__item two-thirds pull_one-third">...</div>
+</div>
+```
+
 ## Contributing
 
 1. Fork it
@@ -98,3 +117,7 @@ To use a namespaced grid such as those created in the second responsive example 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Big Thanks
+
+Once again, big thanks to Harry for his awesome work that has been a big influence on this project. [Check him out](http://www.csswizardy.com) - he's a very clever fella!
