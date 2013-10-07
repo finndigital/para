@@ -1,6 +1,6 @@
 # Para
 
-Para is a simple grid system developed for use internally at [finn](http://www.finncomms.com) and borrows heavily from the thinking of our good friend [@csswizardry](http://www.twitter.com/csswizardy)
+Para is a simple grid system developed for use internally at [finn](http://www.finncomms.com) and borrows heavily from the thinking of our good friend [@csswizardry](http://www.twitter.com/csswizardy) creator of [inuit css](www.github.com/csswizardy/inuit) and [csswizardry-grids](http://www.github.com/csswizardry/grids).
 
 Para adds basic grids to your project as a compass extension.
 
@@ -64,6 +64,32 @@ $vars: $palm, $tablet, $portable, $desk, $wide, $huge;
    }
 }
 ```
+
+### In your html
+
+To use the grids that para spits out, simply scaffold as follows:
+
+```html
+<div class="grid">
+  <div class="grid__item one-third">Column 1</div>
+  <div class="grid__item two-thirds">Column 2</div>
+</div>
+```
+
+When you run `setup-grid()` what you are actually doing is creating a namespaced set of widths that can be used as secondary classes to define column sizes. Sounds complicated, but it's very simple.
+
+Currently para supports columns up to `eigths` but more may well be added in the future.
+
+To use a namespaced grid such as those created in the second responsive example above, simply work from mobile outwards and use the namespaced classes to size as you want.
+
+```html
+<div class="grid">
+  <div class="grid__item one-whole portable-one-third">One whole on all devices that don't match the "portable" media query and one third on those that do.</div>
+  <div class="grid__item one-whole portable-two-thirds">One whole on all devices that don't match the "portable" media query and two thirds on those that do.</div>
+</div>
+```
+
+### Pushing and Pulling
 
 ## Contributing
 
