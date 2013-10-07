@@ -1,6 +1,8 @@
 # Para
 
-TODO: Write a gem description
+Para is a simple grid system developed for use internally at [finn](http://www.finncomms.com) and borrows heavily from the thinking of our good friend [@csswizardry](http://www.twitter.com/csswizardy)
+
+Para adds basic grids to your project as a compass extension.
 
 ## Installation
 
@@ -18,7 +20,50 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Setting up a grid using the defaults is as simple as
+
+```sass
+@import "compass";
+@import "para";
+
+@include initialise-grid(); //we are English!
+
+@inlude setup-grid();
+```
+
+### Getting Responsive
+
+Para includes features to help make your grids respond to device widths and you can set them up as follows
+
+```sass
+@import "compass";
+@import "para";
+
+@include initialise-grid();
+
+@include setup-grid();
+$tablet: '(min-width: 500px)';
+
+@include media-query($tablet){
+  @include setup-grid('tablet-');
+}
+```
+
+Of course, there are neater ways of doing this, and we favour the following:
+
+```sass
+@import "compass";
+@import "para";
+
+$breakpoints: palm, tablet, portable, desk, wide, huge;
+$vars: $palm, $tablet, $portable, $desk, $wide, $huge;
+
+@for $i from 1 through length($breakpoints){
+  @include media-query(#{nth($vars, $i)}){
+    @include setup-grid("#{nth($breakpoints, $i)-"});
+   }
+}
+```
 
 ## Contributing
 
