@@ -3,6 +3,7 @@
    * We want to be able to space the grid, but not use padding
    */
   .grid{
+    @include clearfix;
     margin: 0 $base-grid-padding;
   }
 
