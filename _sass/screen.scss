@@ -4,8 +4,16 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass";
-@import "compass/reset";
 @import "para";
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Oxygen:400,300,700);
+
+@include global-reset;
+
+$body-font-stack: 'Lora', serif;
+$heading-font-stack: 'Oxygen', sans-serif;
+
+$base-font-size: 24px;
+$base-line-height: 32px;
 
 @include initialise-grid();
 
@@ -27,20 +35,51 @@ $vars: $palm, $tablet, $portable, $desk, $wide, $huge;
 html{
   @include padding-leader(1);
   @include contrasted(#343333);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $body-font-stack;
+  font-weight: 400;
+}
+
+.text--center, .text--centre{
+  text-align: center;
 }
 
 .grid__item{
   @include padding-leader(1);
   @include padding-trailer(1);
   @include border-radius(6px);
-  text-align: center;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  background: #f3f3f3;
+}
+
+.grid__item--contrasted{
+  @include contrasted(#f3f3f3);
+  border-right: 1px solid #343333;
+  border-bottom: 1px solid #343333;
 }
 
 .grid{
   @include trailer(1);
+  @include clearfix;
 }
 
+/*
+ * $HEADINGS
+ */
+%heading{
+  font-family: $heading-font-stack;
+  font-weight: 700;
+}
+h1{
+  @include adjust-font-size-to(60px);
+  @include trailer(0.2);
+  @extend %heading;
+} 
+.heading--fancy{
+  font-style: italic;
+}
+h2{
+  @include adjust-font-size-to(30px);
+  @extend %heading;
+}
+h3{
+  @include adjust-font-size-to(26px);
+  @extend %heading;
+}

@@ -15,21 +15,23 @@
     </head>
     <body>
 
-        <div class="site grid">
-          <div class="header grid__item one-whole">
-            <h1 class="title">{{ site.name }}</h1>
-          </div>
+        <div class="site">
+          <header class="grid">
+            <div class="header grid__item one-whole">
+              <h1 class="text--center">{{ site.name }}</h1>
+            </div>
+          </header>
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
+          <div class="footer grid">
+            <div class="contact grid__item three-quarters">
               <p>
                 Finn<br />
                 <a href="mailto:digital@finncomms.com">digital@finncomms.com</a>
               </p>
             </div>
-            <div class="contact">
+            <div class="contact grid__item one-quarter">
               <p>
                 <a href="https://github.com/finndigital">github.com/finndigital</a><br />
                 <a href="https://twitter.com/Finn_PR">twitter.com/Finn_PR</a><br />

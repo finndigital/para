@@ -1,7 +1,7 @@
 require 'sass'
 require 'pathname'
 require 'compass'
-require 'para-grids'
+require 'para'
 require 'compass/exec'
  
 module Jekyll
