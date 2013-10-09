@@ -9,8 +9,8 @@
 
 @include global-reset;
 
-$body-font-stack: 'Lora', serif;
-$heading-font-stack: 'Oxygen', sans-serif;
+$heading-font-stack: 'Lora', serif;
+$body-font-stack: 'Oxygen', sans-serif;
 
 $base-font-size: 24px;
 $base-line-height: 32px;
@@ -35,8 +35,9 @@ $vars: $palm, $tablet, $portable, $desk, $wide, $huge;
 html{
   @include padding-leader(1);
   @include contrasted(#343333);
+  -webkit-font-smoothing: antialiased;
   font-family: $body-font-stack;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .text--center, .text--centre{
@@ -44,8 +45,6 @@ html{
 }
 
 .grid__item{
-  @include padding-leader(1);
-  @include padding-trailer(1);
   @include border-radius(6px);
 }
 
@@ -55,9 +54,8 @@ html{
   border-bottom: 1px solid #343333;
 }
 
-.grid{
-  @include trailer(1);
-  @include clearfix;
+.grid--spaced{
+  @include trailer(2);
 }
 
 /*
@@ -65,21 +63,25 @@ html{
  */
 %heading{
   font-family: $heading-font-stack;
-  font-weight: 700;
+  font-weight: 400;
 }
-h1{
+h1, .alpha{
   @include adjust-font-size-to(60px);
-  @include trailer(0.2);
+  @include trailer(0.5);
   @extend %heading;
 } 
-.heading--fancy{
-  font-style: italic;
-}
-h2{
+h2, .beta{
   @include adjust-font-size-to(30px);
   @extend %heading;
 }
 h3{
   @include adjust-font-size-to(26px);
   @extend %heading;
+}
+
+.heading--fancy{
+  font-style: italic;
+}
+.heading--tight{
+  @include adjust-leading-to(1);
 }

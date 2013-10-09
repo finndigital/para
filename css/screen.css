@@ -1961,19 +1961,18 @@ html {
   padding-top: 1.33333em;
   background-color: #343333;
   color: white;
-  font-family: "Lora", serif;
-  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
 }
 
-/* line 42, ../_sass/screen.scss */
+/* line 43, ../_sass/screen.scss */
 .text--center, .text--centre {
   text-align: center;
 }
 
-/* line 46, ../_sass/screen.scss */
+/* line 47, ../_sass/screen.scss */
 .grid__item {
-  padding-top: 1.33333em;
-  padding-bottom: 1.33333em;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -1981,7 +1980,7 @@ html {
   border-radius: 6px;
 }
 
-/* line 52, ../_sass/screen.scss */
+/* line 51, ../_sass/screen.scss */
 .grid__item--contrasted {
   background-color: #f3f3f3;
   color: black;
@@ -1989,42 +1988,45 @@ html {
   border-bottom: 1px solid #343333;
 }
 
-/* line 58, ../_sass/screen.scss */
-.grid {
-  margin-bottom: 1.33333em;
-  overflow: hidden;
-  *zoom: 1;
+/* line 57, ../_sass/screen.scss */
+.grid--spaced {
+  margin-bottom: 2.66667em;
 }
 
 /*
  * $HEADINGS
  */
-/* line 66, ../_sass/screen.scss */
-h1, h2, h3 {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 700;
+/* line 64, ../_sass/screen.scss */
+h1, .alpha, h2, .beta, h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
 }
 
-/* line 70, ../_sass/screen.scss */
-h1 {
+/* line 68, ../_sass/screen.scss */
+h1, .alpha {
   font-size: 2.5em;
   line-height: 1.06667em;
-  margin-bottom: 0.26667em;
+  margin-bottom: 0.66667em;
 }
 
-/* line 75, ../_sass/screen.scss */
-.heading--fancy {
-  font-style: italic;
-}
-
-/* line 78, ../_sass/screen.scss */
-h2 {
+/* line 73, ../_sass/screen.scss */
+h2, .beta {
   font-size: 1.25em;
   line-height: 2.13333em;
 }
 
-/* line 82, ../_sass/screen.scss */
+/* line 77, ../_sass/screen.scss */
 h3 {
   font-size: 1.08333em;
   line-height: 1.23077em;
+}
+
+/* line 82, ../_sass/screen.scss */
+.heading--fancy {
+  font-style: italic;
+}
+
+/* line 85, ../_sass/screen.scss */
+.heading--tight {
+  line-height: 1.33333em;
 }
